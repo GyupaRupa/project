@@ -6,9 +6,9 @@ from forms import RegisterForm, LoginForm
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def index():
     userid = session.get('userid', None)
-    return render_template('hello.html', userid=userid)
+    return render_template('index.html', userid=userid)
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
