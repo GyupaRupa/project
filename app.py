@@ -42,8 +42,8 @@ def logout():
     return redirect('/')
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1q2w3e4r!@testdb.chnyz3y8a4jr.ap-northeast-2.rds.amazonaws.com:3306/testdb2'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:0000@localhost/testdb'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:1q2w3e4r!@testdb.chnyz3y8a4jr.ap-northeast-2.rds.amazonaws.com:3306/testdb2'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:0000@localhost/testdb'
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'adqdasdqddasdqw'
